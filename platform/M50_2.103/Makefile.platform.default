@@ -1,13 +1,13 @@
 # EOS M50 mk ii 1.0.3
 
-# FIX THESE
-
-CANON_NAME_FIR  = CCF19110.FIR
+CANON_NAME_FIR  = CCF27103.FIR
 UPDATE_NAME_FIR = D_M502103.FIR
-FIRMWARE_ID     = 0x00000412
+# This is wrong
+FIRMWARE_ID     = 0x80000412
 ROMBASEADDR     = 0xE0040000
 
 # user_mem_start from cstart struct. Align to 0x10 up
+# Needs to be updated
 RESTARTSTART    = 0xdc870
 
 # Cortex A9, binaries loaded as Thumb

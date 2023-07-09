@@ -1,5 +1,5 @@
 /**
- * Camera internals for EOS M50 1.1.0
+ * Camera internals for EOS M50 mk ii 1.0.3
  */
 
 /** This camera has a DIGIC VIII chip */
@@ -10,7 +10,7 @@
 
 /** disable SRM for now
  * in current state SRM_AllocateMemoryResourceFor1stJob makes camera crash
- * even if just one buffer is requrested.
+ * even if just one buffer is requested.
  */
 #define CONFIG_MEMORY_SRM_NOT_WORKING
 
@@ -19,3 +19,7 @@
 
 /* hooking EFV_STATE ends with EvfCap crashes, requires investigation */
 //#define CONFIG_STATE_OBJECT_HOOKS
+
+#define CONFIG_NEW_TASK_STRUCTS
+#define CONFIG_TASK_STRUCT_V2_SMP
+#define CONFIG_TASK_ATTR_STRUCT_V5
